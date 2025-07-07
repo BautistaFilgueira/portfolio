@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio de Audio – Bautista Filgueira</title>
+
+  <style>
+    @font-face {
+      font-family: 'Neue Haas Grotesk';
+      src: url('https://cdn.jsdelivr.net/gh/archr/helvetica-neue-fontfacekit/HelveticaNeueLTPro-Roman.woff2') format('woff2'),
+           url('https://cdn.jsdelivr.net/gh/archr/helvetica-neue-fontfacekit/HelveticaNeueLTPro-Roman.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Neue Haas Grotesk', "Helvetica Neue", Arial, sans-serif;
+      background: #000; /* fondo negro */
+      color: #fff; /* texto blanco */
+      line-height: 1.6;
+    }
+
+    /* ===== NAVBAR ===== */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: #111;
+      border-bottom: 1px solid #333;
+      z-index: 1000;
+    }
+    .nav-left {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #fff;
+    }
+    .nav-right a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #bbb;
+      font-size: .95rem;
+      font-weight: 500;
+      transition: color .2s;
+    }
+    .nav-right a:hover {
+      color: #1e90ff;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      padding: 6rem 1rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: .5px;
+      color: #fff;
+    }
+    header p {
+      color: #ccc;
+      margin-top: .5rem;
+    }
+
+    /* ===== GRID ===== */
+    .grid {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto 4rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+    @media (max-width: 992px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .item {
+      background: #111;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
+      padding: 1rem 1rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      color: #ddd;
+    }
+    .item iframe {
+      width: 100%;
+      height: 352px;
+      border: none;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+    .item h3 {
+      margin: 0 0 .5rem;
+      font-size: 1.1rem;
+      color: #fff;
+    }
+    .item p {
+      margin: 0;
+      color: #ccc;
+      flex-grow: 1;
+    }
+
+    /* Subtítulo divisor */
+    .subtitle-divider {
+      grid-column: 1 / -1;
+      text-align: left;
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin: 3rem 0 1rem;
+      color: #eee;
+    }
+
+    /* Ítems de cine con imágenes */
+    .item img {
+      width: 100%;
+      height: 352px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+      cursor: pointer;
+    }
+
+    /* Play button overlay for video thumbnail */
+    .video-thumb {
+      position: relative;
+      width: 100%;
+      max-height: 180px;
+      overflow: hidden;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+      cursor: pointer;
+    }
+    .video-thumb svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      fill: #ffffffcc;
+      width: 60px;
+      height: 60px;
+    }
+    .video-thumb circle {
+      fill: #00000099;
+    }
+    .video-thumb polygon {
+      fill: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="nav-left">Bautista Filgueira</div>
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- GRID 3×6 -->
+  <div class="grid">
+<p>
+    <!-- Subtítulo -->
+    <div class="subtitle-divider">
+      Música
+    </div>
+
+    <!-- Ítem 2 -->
+    <div class="item">
+      <iframe
+        src="https://open.spotify.com/embed/album/5TEvOwAKlHcNOqM5EUnohR?utm_source=generator"
+        loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        allowfullscreen style="border-radius:12px"></iframe>
+      <h3>Mi Amigo Invencible – Arco y Flecha</h3>
+      <p>Técnico en grabación.</p>
+    </div>
+
+    <!-- Ítem 3 -->
+    <div class="item">
+      <iframe
+        src="https://open.spotify.com/embed/album/2h8tzYmqXTHQgDBWIR87aV?utm_source=generator"
+        loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        allowfullscreen style="border-radius:12px"></iframe>
+      <h3>Rayos Láser – Ya No Estoy Aquí</h3>
+      <p>Técnico en grabación.</p>
+    </div>
+
+    <!-- Ítem 4 -->
+    <div class="item">
+      <iframe
+        src="https://open.spotify.com/embed/album/57XHrKuNCRX2NEVx3RcsoX?utm_source=generator"
+        loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        allowfullscreen style="border-radius:12px"></iframe>
+      <h3>El Kuelgue – Hola Precioso</h3>
+      <p>Asistente de grabación.</p>
+    </div>
+
+    <!-- Ítem 5 -->
+    <div class="item">
+      <iframe
+        src="https://open.spotify.com/embed/album/4sDz1XyUaZCom3Tza3ff9q?utm_source=generator"
+        loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        allowfullscreen style="border-radius:12px"></iframe>
+      <h3>Replik – Rapsodia improvisada</h3>
+      <p>Técnico en grabación.</p>
+    </div>
+
+    <!-- Ítem – Turf / Conociendo Rusia – Magia blanca -->
+    <div class="item">
+      <iframe
+        src="https://open.spotify.com/embed/album/3BPnsVrQpM8EijT2e2LnaZ?utm_source=generator"
+        loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        allowfullscreen style="border-radius:12px"></iframe>
+      <h3>Turf – Magia blanca</h3>
+      <p>Asistente de grabación.</p>
+    </div>
+
+    <!-- Ítem 6 -->
+    <div class="item">
+      <iframe
+        src="https://open.spotify.com/embed/playlist/5wbCBuSjj3TwTB636IqBxf?utm_source=generator"
+        loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        allowfullscreen style="border-radius:12px"></iframe>
+      <h3>Fika</h3>
+      <p>Producción, composición, grabación, mezcla.</p>
+    </div>
+
+    <!-- Ítem 7 -->
+    <div class="item">
+      <iframe
+        src="https://open.spotify.com/embed/playlist/5teCkeNhtoUjuHQ7tfCpIw?utm_source=generator"
+        loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        allowfullscreen style="border-radius:12px"></iframe>
+      <h3>C.E.M.E.N.T.E.R.I.O.</h3>
+      <p>Producción, grabación de guitarras, mezcla.</p>
+    </div>
+
+    <!-- Ítem 8 -->
+    <div class="item">
+      <iframe
+        src="https://open.spotify.com/embed/album/4goPO6MYETphxqyXIRUYQz?utm_source=generator"
+        loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        allowfullscreen style="border-radius:12px"></iframe>
+      <h3>Brune La Cava – Al Final Del Camino Había un Espejo</h3>
+      <p>Técnico en grabación.</p>
+    </div>
+
+    <!-- Ítem 2 -->
+    <div class="item">
+      <iframe
+        src="https://open.spotify.com/embed/album/6EyaUtcKE19xNI4oHQfSfh?utm_source=generator"
+        loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        allowfullscreen style="border-radius:12px"></iframe>
+      <h3>Cabezas de Remolino – Tan liviano</h3>
+      <p>Producción, grabación, guitarras, sintetizadores, percusión, coros, mezcla.</p>
+    </div>
+
+    <!-- Ítem 9 -->
+    <div class="item">
+      <iframe
+        src="https://open.spotify.com/embed/album/6QrShQCDmsD2lTPo8GMShW?utm_source=generator"
+        loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        allowfullscreen style="border-radius:12px"></iframe>
+      <h3>Florida – Algunas puertas son más grandes que otras</h3>
+      <p>Mezcla.</p>
+    </div>
+
+    <!-- Ítem 10 -->
+    <div class="item">
+      <iframe
+        src="https://open.spotify.com/embed/album/6kUkGFHP7LkPTbYCC8A7m4?utm_source=generator"
+        loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        allowfullscreen style="border-radius:12px"></iframe>
+      <h3>Detonantes – Bola Rápida</h3>
+      <p>Técnico en grabación.</p>
+    </div>
+
+    <!-- Ítem – Cardellino Studio Session -->
+    <div class="item">
+      <iframe
+        src="https://open.spotify.com/embed/album/6ytOigdsKGW6FonKk2zDGr?utm_source=generator"
+        loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        allowfullscreen style="border-radius:12px"></iframe>
+      <h3>Cardellino – Studio Session</h3>
+      <p>Asistente de grabación.</p>
+    </div>
+
+    <!-- Ítem – Alfre Storti -->
+    <div class="item">
+      <iframe
+        src="https://open.spotify.com/embed/album/49EQaeSdtpqYK1gGt13M3M?utm_source=generator"
+        loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        allowfullscreen style="border-radius:12px"></iframe>
+      <h3>Alfre Storti – Tres Cuartos</h3>
+      <p>Técnico en grabación.</p>
+    </div>
+
+    <!-- Ítem – Sergio Wagner - Talampaya -->
+    <div class="item">
+      <iframe
+        src="https://open.spotify.com/embed/album/72XW0VvGFs40SQ8v6OlCUW?utm_source=generator"
+        loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        allowfullscreen style="border-radius:12px"></iframe>
+      <h3>Sergio Wagner – Talampaya</h3>
+      <p>Asistente de grabación.</p>
+    </div>
+
+    <div class="item">
+      <iframe
+        src="https://open.spotify.com/embed/album/47BYCWycHZpaW42ji9id3I?utm_source=generator"
+        loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        allowfullscreen style="border-radius:12px"></iframe>
+      <h3>Nicola - Que Importa la Etiqueta</h3>
+      <p>Asistente de grabación.</p>
+    </div>
+
+    <!-- Subtítulo divisor -->
+    <div class="subtitle-divider" style="font-size: 1.3rem;">
+      Cine & Audiovisual
+    </div>
+
+    <!-- Ítem 1 – Huellas de Sangre con portada personalizada -->
+    <div class="item">
+      <div class="video-thumb"
+           onclick="this.outerHTML = '<iframe width=\'100%\' height=\'352\' src=\'https://www.youtube.com/embed/w68-QawflfI?autoplay=1\' frameborder=\'0\' allowfullscreen style=\'border-radius:12px\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\' loading=\'lazy\'></iframe>'">
+        
+        <img src="https://i.imgur.com/O6iRBl2.png" alt="Portada de Huellas de Sangre">
+
+        <!-- Botón de play superpuesto -->
+        <svg viewBox="0 0 100 100" >
+          <circle cx="50" cy="50" r="45"/>
+          <polygon points="40,30 70,50 40,70"/>
+        </svg>
+      </div>
+
+      <h3>Huellas de Sangre – Canal de Youtube </h3>
+      <p>Grabación y edición de sonido, música original, mezcla y mastering. Postproducción de sonido.</p>
+    </div>
+
+    <!-- Ítem Documental -->
+    <div class="item">
+      <a href="https://play.cine.ar/INCAA/produccion/9029" target="_blank" rel="noopener noreferrer" style="display:block; border-radius:12px; overflow:hidden; margin-bottom:1rem; cursor:pointer;">
+        <img src="https://img.cine.ar/image/64d3d69c88bf7791ec1893ed/context/odeon_afiche_prod" alt="Corto documental - Postproducción de sonido">
+      </a>
+      <h3>Postproducción de sonido – Corto documental</h3>
+      <p>Postproducción de sonido. (Festival internacional de cine documental DOCA)</p>
+    </div>
+
+    <!-- Ítem Cortometraje Banda Sonora -->
+    <div class="item">
+      <a href="#" target="_blank" rel="noopener noreferrer" style="display:block; border-radius:12px; overflow:hidden; margin-bottom:1rem; cursor:pointer;">
+        <img src="https://m.media-amazon.com/images/M/MV5BNmNiZDk1NDctOWVkZi00MTNkLTkyM2QtNGQ3MGM1NWJkMTkwXkEyXkFqcGc@._V1_.jpg" alt="Cortometraje - Banda sonora">
+      </a>
+      <h3>Sofía – Cortometraje</h3>
+      <p>Composición y producción de la banda sonora. (Festival de la mujer y el cine)</p>
+    </div>
+
+    <!-- Ítem Documental Música Original y Postproducción -->
+    <div class="item">
+      <a href="#" target="_blank" rel="noopener noreferrer" style="display:block; border-radius:12px; overflow:hidden; margin-bottom:1rem; cursor:pointer;">
+        <img src="https://pics.filmaffinity.com/el_espacio_interior-656782660-large.jpg" alt="El espacio interior - Música y postproducción">
+      </a>
+      <h3>El Espacio Interior – Documental</h3>
+      <p>Música original y postproducción de sonido para cortometraje documental.
+      (Festival márgenes Madrid 2020)</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
