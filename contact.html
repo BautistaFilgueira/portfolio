@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto – Bautista Filgueira</title>
+  <style>
+    @font-face {
+      font-family: 'Neue Haas Grotesk';
+      src: url('https://cdn.jsdelivr.net/gh/archr/helvetica-neue-fontfacekit/HelveticaNeueLTPro-Roman.woff2') format('woff2'),
+           url('https://cdn.jsdelivr.net/gh/archr/helvetica-neue-fontfacekit/HelveticaNeueLTPro-Roman.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Neue Haas Grotesk', "Helvetica Neue", Arial, sans-serif;
+      background: #000;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: #111;
+      border-bottom: 1px solid #333;
+      z-index: 1000;
+    }
+    .nav-left { font-weight: bold; font-size: 1.2rem; color: #fff; }
+    .nav-right a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #bbb;
+      font-size: .95rem;
+      font-weight: 500;
+      transition: color .2s;
+    }
+    .nav-right a:hover { color: #1e90ff; }
+
+    .container {
+      max-width: 800px;
+      margin: 7rem auto 4rem;
+      background: #111;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(255, 255, 255, .1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #fff;
+    }
+
+    .contact-info {
+      font-size: 1rem;
+      color: #ccc;
+      line-height: 1.8;
+    }
+
+    .contact-info a {
+      color: #1e90ff;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    .social {
+      display: flex;
+      align-items: center;
+      margin: 1rem 0;
+    }
+
+    .social svg {
+      width: 20px;
+      height: 20px;
+      margin-right: 0.5rem;
+      fill: #E1306C;
+    }
+
+    .contact-info p:last-of-type {
+      margin-top: 2rem;
+      color: #666;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="nav-left">Bautista Filgueira</div>
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- CONTENIDO -->
+  <div class="container">
+    <h1>Contacto</h1>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:bfilgueira_98@gmail.com">bfilgueira_98@gmail.com</a></p>
+      <p>Teléfono: +54 9 11 5823 9197</p>
+
+      <!-- Instagram -->
+      <div class="social">
+        <svg viewBox="0 0 448 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <path d="M224,202.66A53.34,53.34,0,1,0,277.34,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.86-30.86C293.05,120,256,120,256,120H192c0,0-37.05,0-61.85,10.84a54,54,0,0,0-30.86,30.86C88.35,166.95,88.35,204,88.35,204v64c0,0,0,37.05,10.84,61.85a54,54,0,0,0,30.86,30.86C154.95,371.65,192,371.65,192,371.65h64c0,0,37.05,0,61.85-10.84a54,54,0,0,0,30.86-30.86C359.65,305.05,359.65,268,359.65,268v-64C359.65,204,359.65,166.95,348.71,161.71ZM224,338A82,82,0,1,1,306,256,82,82,0,0,1,224,338Zm85-148a19,19,0,1,1,19-19A19,19,0,0,1,309,190Z"/>
+        </svg>
+        <a href="https://www.instagram.com/el.chaz_/" target="_blank" rel="noopener noreferrer">@el.chaz_</a>
+      </div>
+
+      <p>Buenos Aires, Argentina</p>
+    </div>
+  </div>
+
+</body>
+</html>
