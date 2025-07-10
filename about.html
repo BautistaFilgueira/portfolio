@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About – Bautista Filgueira</title>
+  
+  <!-- Carga de Neue Haas Grotesk desde Adobe Fonts (deberías reemplazar el link por el de tu cuenta si tenés licencia) -->
+  <link rel="stylesheet" href="https://use.typekit.net/xyz123.css" /> 
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "neue-haas-grotesk-text", "Helvetica Neue", Arial, sans-serif;
+      background: #000000;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: #111;
+      border-bottom: 1px solid #222;
+      z-index: 1000;
+    }
+    .nav-left {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #eee;
+    }
+    .nav-right a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #ccc;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-right a:hover {
+      color: #1e90ff;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 100px auto 2rem; /* margen superior para no tapar navbar */
+      background: #000000;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(255 255 255 / 0.1);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 2rem;
+    }
+
+    .about-image {
+      width: 400px;
+      height: 400px;
+      border-radius: 4px;
+      object-fit: contain;
+      background-color: #000;
+      box-shadow: 0 px 8px rgba(255 255 255 / 0.3);
+    }
+
+    .about-text {
+      font-size: 1rem;
+      color: #ddd;
+      max-width: 600px;
+    }
+
+    @media (max-width: 700px) {
+      main {
+        margin: 100px 1rem 2rem;
+      }
+      .about-image {
+        width: 250px;
+        height: 250px;
+      }
+      .about-text {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-left">Bautista Filgueira</div>
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <img
+      src="https://i.imgur.com/K9bRcyF.jpeg"
+      alt="Foto de Bautista Filgueira"
+      class="about-image"
+    />
+    <div class="about-text">
+      <p>Bautista Filgueira Risso es un músico, productor y técnico en grabación y mezcla radicado en Buenos Aires, Argentina. Estudió música en la Escuela de Música Contemporánea y se formó con reconocidos profesionales del audio como Francisco Rodríguez Amenábar, entre otros.</p>
+      <p>Actualmente, trabaja en el estudio Los Días Perfectos (antes conocido como Insigno), donde ha grabado a importantes artistas de la escena local argentina, como Marilina Bertoldi, El Kuelgue, David Lebón y Javier Malosetti, entre otros. Paralelamente, desarrolla proyectos propios desde su estudio personal, donde produce y graba diversas propuestas, incluyendo Huellas de Sangre, un canal de YouTube dedicado a la historia que fue declarado de interés cultural por la Legislatura Porteña en 2024.</p>
+      <p>Además, ha compuesto la música y realizado el diseño sonoro del largometraje documental El Espacio Interior (seleccionado en el Festival Márgenes Madrid 2020). Fue el autor de la música original para los cortometrajes ganadores La Plaza del Barrio (actualmente en distribución), Sofía (Festival de la Mujer y el Cine) y Amor de Verano (Festival Internacional de Cine Documental DOCA).</p>
+      <p>Como guitarrista, compositor y productor, forma parte de la banda Cabezas de Remolino, con la que se presentará en el Festival Bandera a finales de 2025, compartiendo cartel con reconocidas bandas como Divididos y Babasónicos.</p>
+    </div>
+  </main>
+</body>
+</html>
